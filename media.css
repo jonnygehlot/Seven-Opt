@@ -1,0 +1,90 @@
+@media only screen and (min-width:200px) and (max-width:575px) {
+    
+    .mfixed{
+        display: flex;
+    }
+    .bars {
+        display: block;
+        color: white;
+        background-color: #c8a758;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .fixed{
+        display: none;
+    }
+    .banner,
+    .Enquiry_form,
+    .card,
+    .boxis,
+    .boxi {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .boxis {
+        padding: 10px;
+    }
+    #section6 button{
+        margin-top: 70px;
+    }
+    .banner figure,
+    .boxi {
+        margin: 10px;
+    }
+
+    #section6 .flex-sb {
+        padding: 20px;
+    }
+
+    #section2 .flex-sb,
+    #section3 .flex-sb,
+    .review_cards,
+    #section6 .flex-sb,
+    #section8 .flex-sb,
+    .universities,
+    #section9 .flex-sb,
+    #section11 .flex-cnt,
+    #section7,  
+    #section7 .flex-sb,
+    footer .flex-sb,
+    .user
+    {
+    flex-direction: column;
+}
+
+nav,
+.antichevi,
+.chevi,
+.md {
+    display: none;
+}
+.contactform{
+    width: 100%;
+}
+.address{
+    border-radius: 10px 10px 0 0;
+}
+.contactform{
+    border-radius: 0 0 10px 10px;
+}
+}
+.socialicons{
+    margin: 20px;
+}
+.fs1 h3{
+    text-align: center;
+}
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7,
+#section8,
+#section9,
+#section10,
+#section11{
+    padding: 20px;
+}

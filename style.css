@@ -1,0 +1,703 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.fixed{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.icon{
+    background-color: #072e59;
+    padding: 10px 11px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.icon span{
+    width: 126px;
+    position: absolute;
+    left: -150px;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    margin: -10px 10px;
+    transition: 0.3s;
+    transform: translateX(40px) scaleX(0);
+    transform-origin: right;
+    opacity: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.icon:hover span{
+    width: 150px;
+    transform: translateX(0) scaleX(1);
+    opacity: 1;
+}
+body {
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bluecolor: #072e59;
+    --orange: #ffc107;
+    --full: 100%;
+}
+
+.main {
+    width: 100%;
+}
+
+a {
+    color: red;
+}
+
+button {
+    cursor: pointer;
+}
+
+.fs {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.fs1 {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.flex-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wp {
+    flex-wrap: wrap;
+}
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-clmn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #011731;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    box-shadow: 0 0 10px 1px black;
+}
+
+header figure {
+    width: 250px;
+}
+
+header figure img {
+    width: 100%;
+}
+
+nav {
+    height: 70px;
+    font-size: 16px;
+}
+
+nav>ul {
+    gap: 30px;
+    height: 100%;
+}
+
+nav>ul>li {
+    height: 100%;
+    position: relative;
+}
+
+nav>ul>li:hover .dropdown {
+    display: block;
+}
+
+nav>ul>li>a {
+    height: 100%;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>ul>li>a:hover {
+    color: #00fff2;
+}
+
+.bars {
+    display: none;
+}
+
+.dropdown {
+    width: 250px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: -20px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.dropdown a {
+    color: black;
+    font-weight: 600;
+}
+
+#section1 {
+    background-color: var(--bluecolor);
+}
+
+.banner {
+    padding-top: 50px;
+    color: white;
+}
+
+.bannerdetails {
+    flex-basis: 50%;
+    margin: 2%;
+}
+
+.bannerdetails h4 {
+    font-size: 35px;
+}
+
+.bannerdetails p {
+    margin: 20px 0;
+}
+
+.bannerdetails button {
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bannerdetails button a {
+    color: white;
+}
+
+.bannerdetails button span {
+    position: absolute;
+    opacity: 0;
+    left: 70%;
+    transition: 0.3s;
+}
+
+.bannerdetails button:hover a {
+    color: blue;
+}
+
+.bannerdetails button:hover span {
+    opacity: 1;
+    left: 92%;
+}
+
+.fa-check {
+    color: var(--orange);
+}
+
+.banner figure {
+    flex-basis: 35%;
+    padding: 25px;
+    border: 2px solid var(--orange);
+    position: relative;
+}
+
+.banner figure img {
+    width: 100%;
+}
+
+.chevi,
+.antichevi {
+    position: absolute;
+    padding: 15px 20px;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    top: 45%;
+}
+
+.chevi {
+    right: -100px;
+}
+
+.antichevi {
+    left: -100px;
+}
+
+#section2 {
+    padding: 50px 0;
+}
+
+#section2>h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+#section2 p {
+    margin: 20px 0;
+    line-height: 26px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.molly {
+    flex-basis: 70%;
+}
+
+.Enquiry_form {
+    flex-basis: 25%;
+    background-color: var(--bluecolor);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.Enquiry_form h3 {
+    font-size: 26px;
+}
+
+.Enquiry_form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Enquiry_form textarea {
+    width: 90%;
+    height: 150px;
+    padding: 10px;
+    resize: none;
+}
+
+.Enquiry_form input::placeholder,
+.Enquiry_form textarea::placeholder {
+    font-weight: 600;
+    color: black;
+    font-size: 15px;
+}
+
+.Enquiry_form button {
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.card {
+    flex-basis: 23%;
+    background-color: var(--bluecolor);
+    margin: 1%;
+    padding: 30px 0;
+    transition: 1s;
+}
+
+.card figure {
+    gap: 20px;
+    transition: 1s;
+}
+
+.card figure figcaption {
+    color: white;
+    font-size: 20px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card figure img {
+    transition: 1s;
+}
+
+.card:hover figure img {
+    transform: scale(1.2);
+    transform: translateY(-10px);
+}
+
+#section4 {
+    background-color: var(--bluecolor);
+    padding: 50px 0;
+}
+
+.reviews h3 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+.review_cards {
+    padding: 20px 0;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.box {
+    flex-basis: 30%;
+    padding: 50px;
+    border: 1px solid var(--orange);
+    color: white;
+    margin: 20px;
+}
+
+.box p {
+    margin: 20px 0;
+}
+
+.user figure {
+    width: 20%;
+    margin: 10px;
+}
+
+.user figure img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.username {
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.country {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#section5 {
+    padding: 50px 0;
+}
+
+#section5>h3 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.boxis {
+    padding: 30px 0;
+}
+
+.boxi {
+    flex-basis: 18%;
+    padding: 2% 0;
+    border: 2px solid #c8a758;
+}
+
+.boxi h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.boxi h4 {
+    font-size: 20px;
+}
+
+#section6 {
+    background-color: #011731;
+    color: white;
+    padding: 30px 0;
+}
+
+#section6 h3 {
+    flex-basis: 70%;
+    font-size: 34px;
+}
+
+#section6 button {
+    margin-right: 70px;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+#section7 {
+    padding: 50px 0;
+}
+
+.whyus {
+    flex-basis: 45%;
+    padding: 20px 0;
+}
+
+.whyus h3 {
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.whyus p {
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 26px;
+}
+
+#section7 .flex-sb {
+    flex-basis: 45%;
+    gap: 35px;
+}
+
+.cardi {
+    flex-basis: 40%;
+    background-color: #072e59;
+    box-shadow: 15px 15px rgba(201, 199, 199, 1);
+    color: white;
+    padding: 20px 3.5%;
+}
+
+.cardi figure {
+    margin: 20px 0;
+}
+
+.cardi h4 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.cardi p {
+    text-align: justify;
+    line-height: 30px;
+}
+
+#section8 {
+    background-color: #011731;
+    padding: 50px 0;
+    color: white;
+}
+
+#section8 h3 {
+    padding: 20px 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.sopvisa figure {
+    flex-basis: 23%;
+    margin: 1%;
+    text-align: center;
+    transition: 1s;
+}
+
+.sopvisa figure:hover {
+    transform: scale(1.1);
+}
+
+.sopvisa figure figcaption {
+    margin: 20px 0;
+}
+
+.sopvisa figure img {
+    width: 100%;
+}
+
+#section9 {
+    padding: 50px 0;
+}
+
+#section9 h3 {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#section9 figure {
+    flex-basis: 25%;
+}
+
+#section9 figure img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+figure figcaption {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#section10 {
+    background: url('Images/webinar-34.png') no-repeat #011731;
+    padding: 50px 0;
+    background-position: left top;
+    background-size: 17% auto;
+}
+
+#section10 h3 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.universities {
+    position: relative;
+    color: white;
+}
+
+#section11 {
+    background-color: #072e59;
+    padding: 50px 0;
+}
+
+.address {
+    flex-basis: 50%;
+    height: 700px;
+    background-color: #c8a758;
+    color: white;
+    padding: 40px;
+    border-radius: 5px 0 0 5px;
+}
+
+.address h3 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.address article p {
+    margin: 20px 0;
+}
+
+.contactform {
+    height: 700px;
+    flex-basis: 50%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 0 5px 5px 0;
+}
+
+.contactform input,
+.contactform textarea {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #c8a758;
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+.contactform input::placeholder,
+.contactform textarea::placeholder {
+    color: #ccc;
+    font-size: 15px;
+}
+
+.contactform textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contactform button {
+    background-color: transparent;
+    border: 2px solid #c8a758;
+    padding: 10px 30px;
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+#section12 {
+    background-color: #262626;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+    font-size: 15px;
+}
+
+#section12 a {
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    background-color: #303030;
+    padding: 30px 0;
+}
+
+footer h3 {
+    color: #a8a8a8;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+footer h3::before {
+    content: 'Copyright © 2023 Sevenopt.com |';
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    padding-right: 10px;
+}
+
+.socialicons a {
+    font-size: 26px;
+    color: #a8a8a8;
+    margin-right: 25px
+}
+
+.socialicons i {
+    margin: 0 15px;
+}
+.mfixed {
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #011731;
+    font-size: 16px;
+    text-align: center;
+}
+
+.mfixed div {
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid;
+    padding: 10px;
+}
+.mfixed a{
+    color: white;
+}
+
+.mfixed div:first-child {
+    border-radius: 15px 0 0 0;
+}
+.mfixed div:last-child{
+    border: none;
+    border-radius: 0 10px 0 0;
+}
